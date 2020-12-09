@@ -13,7 +13,7 @@
 
 Swagger URLs to exclude from security check
 
-/v2/api-docs, /configuration/ui, /swagger-resources/**, /configuration/security, /swagger-ui.html, /webjars/**,/api/**,/admin/users/*/notification/passwordReset,/admin/users/notification/passwordResetVerification,/admin/users/forgotPassword
+/v2/api-docs, /configuration/ui, /swagger-resources/**, /configuration/security, /swagger-ui.html, /webjars/**,/api/**
 
 
 We can add below code in WebSecurityConfigurerAdapter impl class
