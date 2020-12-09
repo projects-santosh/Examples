@@ -10,3 +10,15 @@
 	<artifactId>springfox-swagger2</artifactId>
 	<version>2.9.2</version>
 </dependency>
+
+Swagger URLs to exclude from security check
+
+/v2/api-docs, /configuration/ui, /swagger-resources/**, /configuration/security, /swagger-ui.html, /webjars/**,/api/**,/admin/users/*/notification/passwordReset,/admin/users/notification/passwordResetVerification,/admin/users/forgotPassword
+
+
+We can add below code in WebSecurityConfigurerAdapter impl class
+
+@Override
+public void configure(WebSecurity web) throws Exception {
+	web.ignoring().antMatchers(excludedUrl);
+}
